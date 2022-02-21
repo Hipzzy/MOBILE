@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="720dp"
+    tools:context=".SecondActivity">
+
+  <TextView
+      android:id="@+id/text_header"
+      android:layout_width="203dp"
+      android:layout_height="62dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="8dp"
+      android:text="@string/text_header"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/text_message"
+      android:layout_width="139dp"
+      android:layout_height="35dp"
+      android:layout_marginTop="60dp"
+      android:layout_marginEnd="184dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+  <Button
+      android:id="@+id/button_second"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="48dp"
+      android:layout_marginBottom="416dp"
+      android:onClick="returnReply"
+      android:text="@string/button_second"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/editText_second" />
+
+  <EditText
+      android:id="@+id/editText_second"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:autofillHints="20"
+      android:ems="10"
+      android:hint="@string/editText_second"
+      android:inputType="textLongMessage|textPersonName"
+      android:minHeight="48dp"
+      android:textColorHint="#546E7A"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_message"
+      app:layout_constraintVertical_bias="0.148" />
+
+</android.support.constraint.ConstraintLayout>
